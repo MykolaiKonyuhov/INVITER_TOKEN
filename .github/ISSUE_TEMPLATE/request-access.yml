@@ -1,0 +1,16 @@
+name: Access Request
+description: Send a reqest for joining a project
+title: "[Access Request]: "
+labels: ["access-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Enter your current nickname GitHub in order to get automatical invitation.
+  - type: input
+    id: username
+    attributes:
+      label: Your GitHub nickname
+      placeholder: "octocat"
+    validations:
+      required: true
