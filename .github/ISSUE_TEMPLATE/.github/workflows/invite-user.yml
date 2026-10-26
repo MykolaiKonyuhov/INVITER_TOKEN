@@ -6,7 +6,7 @@ on:
 
 jobs:
   invite:
-    if: contains(github.event.issue.labels.*.name, 'access-request')
+    if: startsWith(github.event.issue.title, '[Access Request]')
     runs-on: ubuntu-latest
     steps:
       - name: Parse GitHub Username
